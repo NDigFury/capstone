@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.redRow {
+  margin-left:0px;
+  margin-right:0px;
+  background-color:#ab0520;
+  height:40px;
+  width: 100%;
+}
+
+
+.logo {
+  height:auto;
+  width:400px;
+  padding: 10px;
+}
+
+.menuItems {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  float:right;
+}
+/*These are for the 'li' in menuItems*/
+li {
+  float: left;
+  font-family: sans-serif;
+}
+
+li a {
+  color: #041e4a;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:white;
+  background-color: #041e4a;
+}
+
+.titleContainer {
+  height: 55px;
+  border-top: 2px solid #f0ecec;
+}
+
+.entryTitle {
+  font-family: sans-serif;
+  color: #041e4a;
+  position:center;
+}
+
+.tableContainer {
+  padding: 15px;
+}
+
+table thead tr th {
+  border-bottom: 1px solid black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+table tbody tr td {
+  border: 1px solid black;
+  font-family:sans-serif;
+  font-size: 15px;
+}
