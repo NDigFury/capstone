@@ -22,13 +22,13 @@
     <h1 class="entryTitle">OPPORTUNITY MANAGEMENT SYSTEM</h1>
   </div>
   <div class="tableContainer">
-        <table>
+        <table style="border-collapse: collapse;">
         <thead>
         <tr>
-        <th><div> Student Name(s) (Last, First) </div></th>
-        <th><div> Project Title </div></th>
-        <th><div> Year </div></th>
-        <th><div> Report URL </div></th>
+        <th>Student Name(s)</th>
+        <th>Project Title</th>
+        <th>Year</th>
+        <th>Report URL</th>
         </tr>
         </thead>
     <?php

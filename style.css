@@ -3,6 +3,10 @@ html {
   width: 100%;
 }
 
+html body {
+  margin: 0;
+}
+
 .redRow {
   margin-left:0px;
   margin-right:0px;
@@ -10,7 +14,6 @@ html {
   height:40px;
   width: 100%;
 }
-
 
 .logo {
   height:auto;
@@ -53,20 +56,40 @@ li a:hover {
   font-family: sans-serif;
   color: #041e4a;
   position:center;
+  margin: 5px;
 }
 
 .tableContainer {
   padding: 15px;
+  border-width: 2px;
 }
 
+.table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Header for table */
 table thead tr th {
-  border-bottom: 1px solid black;
+  padding: 10px;
   font-family: sans-serif;
   font-size: 15px;
+  color:white;
+  background-color: #041e4a;
+  border-style: solid;
+  border-color: #041e4a;
 }
 
+/* Table entries */
 table tbody tr td {
   border: 1px solid black;
   font-family:sans-serif;
   font-size: 15px;
+  width: 25%;
+}
+
+/* Different color rows for visibility */
+table tbody tr:nth-child(odd) {
+  background-color: #f0ecec;
 }
