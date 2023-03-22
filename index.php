@@ -16,6 +16,8 @@
       <li><a href="https://www.arizona.edu/">Home</a></li>
       <li><a href="https://www.arizona.edu/about">About</a></li>
       <li><a href="https://news.arizona.edu/">News</a></li>
+      <li><a href="survey link place holder">Survey</a></li>
+      <li><a href="entry.php">Current Project</a></li>
     </ul>
   </div>
   <div class="titleContainer">
