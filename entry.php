@@ -50,7 +50,7 @@
     </section>
 </main>
 <footer>
-    <p>&copy; 2023 Hector Nava. All rights reserved.</p>
+    <p>&copy; 2023 Nikki Diguardi & Steven Werden. All rights reserved.</p>
 </footer>
 </body>
 </html>
