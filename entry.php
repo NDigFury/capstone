@@ -29,26 +29,30 @@
             <p>Project type: Capstone Spring 2023</p>
             <p>Basic description and names of the people</p>
             <p>maybe an image of what they made</p>
-            <a href="link to project">Opportunity System</a>
+            <a href="srw.rjwebz.net">Opportunity Management System</a>
         </div>
     </section>
     <section id="contact">
-        <h1>Form for the project</h1>
-        <form action="send_email.php" method="post" enctype="multipart/form=data">
-            <label for="name">Title:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Contact Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Description:</label>
-            <textarea id="message" name="message" required></textarea>
-            <label for="website">Website:</label>
-            <textarea id ="website" name="website"></textarea>
-            <label for="file">Image:</label>
-            <input type="file" name="fileToUpload" id="fileToUpload">
+        <h1>Form for your project:</h1>
+        <form action="send_email.php" method="post" enctype="multipart/form=data"> <br>
+            <label for="name">Title:</label>  <br>
+            <input type="text" id="name" name="name" required>  <br><br>
+            <label for="email">Contact Email:</label>  <br>
+            <input type="email" id="email" name="email" required>  <br><br>
+            <label for="message">Description:</label>  <br>
+            <textarea id="message" name="message" required></textarea>  <br><br>
+            <label for="website">Website:</label>  <br>
+            <textarea id ="website" name="website"></textarea>  <br><br>
+            <label for="file">Image:</label>  <br>
+            <input type="file" name="fileToUpload" id="fileToUpload">  <br><br>
             <button type="submit">Send Project</button>
         </form>
     </section>
 </main>
+<br>
+<br>
+<br>
+<br>
 <footer>
     <p>&copy; 2023 Nikki Diguardi & Steven Werden. All rights reserved.</p>
 </footer>
