@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Opportunity System | University of Arizona</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
   <div class="redRow"></div>
   <div class="headerMain">
@@ -23,40 +21,48 @@
   <div class="titleContainer">
     <h1 class="entryTitle">OPPORTUNITY MANAGEMENT SYSTEM</h1>
   </div>
-
   <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Current')" id="defaultOpen">Current</button>
     <button class="tablinks" onclick="openTab(event, 'Past')">Past</button>
   </div>
   <div id="Current" class="tabcontent">
     <div class="tableContainer">
-          <table style="border-collapse: collapse;">
-          <thead>
-          <tr>
-          <th>Student Name(s)</th>
-          <th>Project Title</th>
-          <th>Year</th>
-          <th>Report URL</th>
-          </tr>
-          </thead>
-      <?php
-        echo "<tbody>\n\n";
-        $f = fopen("survey.csv", "r");
-        while (($line = fgetcsv($f)) !== false){ 
-          echo "<tr>";
-          foreach ($line as $cell) {
-          echo "<td>" . htmlspecialchars($cell) . "</td>";
-        }
-        echo "</tr>\n";
-        }
-        fclose($f);
-        echo "\n</tbody></table>";
-        ?>
+      <?php tableStatus(0); ?>
     </div>
   </div>
   <div id="Past" class="tabcontent">
-      <p>Insert here</p>
+    <div class="tableContainer">
+      <?php tableStatus(1)?>
+    </div>
   </div>
+<?php
+  function tableStatus($curCom) {
+    echo "<table style=\"border-collapse: collapse;\">
+    <thead>
+    <tr>
+    <th>Student Name(s)</th>
+    <th>Project Title</th>
+    <th>Year</th>
+    <th>Report URL</th>
+    </tr>
+    </thead>";
+    echo "<tbody>\n\n";
+    $f = fopen("survey.csv", "r");
+    $i = 0;
+    while (($line = fgetcsv($f)) !== false){
+      if($i % 2 == $curCom) { // TODO: Adjust params for form later
+        echo "<tr>";
+        foreach ($line as $cell) {
+          echo "<td>" . htmlspecialchars($cell) . "</td>";
+        }
+        echo "</tr>\n";
+    }
+    $i += 1;
+    }
+    fclose($f);
+    echo "\n</tbody></table>";
+  }
+?>
 <script>
   document.getElementById("defaultOpen").click(); //Open current when page loads.
   function openTab(event, status) {
