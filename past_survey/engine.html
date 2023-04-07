@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+		<title>Past Project Submission Survey</title>
+	</meta>
+</head>
+<body>
+	<form id="survey" action="api.php" method="POST">
+		<label for="have">Do you have a Project?</label>
+		<select id="have" name="have" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+		<label for="title">What is the title of your project?</label>
+		<input type="text" id="title" name="title" required>
+		<label for="description">Describe your project in a few sentences.</label>
+		<textarea id="description" name="description" rows="4" cols="50" required></textarea>
+		<label for="length">About how long did it take you to complete your project?</label>
+		<select id="length" name="length" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="days">Days</option>
+			<option value="weeks">Weeks</option>
+			<option value="months">Months</option>
+			<option value="years">Years</option>
+		</select>
+		<label for="time">Does your project require more development?</label>
+		<select id="time" name="time" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+		<label for="difficulty">On a scale from 1 being easy to 5 being hard, how hard was your project to complete?</label>
+		<select id="difficulty" name="difficulty" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<label for="entry">Please attach a file to dispaly your project</label>
+		<input type="file" id="entry" name="entry" required>
+		<label for="email">Your email address?</label>
+		<input type="text" id="email" name="email" required>
+		<input type="submit" value="Submit">
+		<script src="main.js"></script>
+</body>
+</html>
