@@ -15,7 +15,7 @@
       <li><a href="https://www.arizona.edu/about">About</a></li>
       <li><a href="https://news.arizona.edu/">News</a></li>
       <li><a href="https://uarizona.co1.qualtrics.com/jfe/form/SV_6RPvRifXIuqmQnA">Survey</a></li>
-      <li><a href="entry.php">Create Submission</a></li>
+      <li><a href="past_survey/engine.html">Create Submission</a></li>
     </ul>
   </div>
   <div class="titleContainer">
