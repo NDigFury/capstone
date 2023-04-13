@@ -1,6 +1,5 @@
 document.getElementById("survey").addEventListener("submit", function(event) 
 {
-	const have = document.getElementById("have").value.trim();
 	const title = document.getElementById("title").value.trim();
 	const type = document.getElementById("type").value.trim();
 	const description = document.getElementById("description").value.trim();
@@ -14,12 +13,16 @@ document.getElementById("survey").addEventListener("submit", function(event)
 	const difficulty = document.getElementById("difficulty").value.trim();
 	const knowledge = document.getElementById("knowledge").value.trim();
 	const email = document.getElementById("email").value.trim();
+	const studentID = document.getElementById("studentID").value.trim();
 
-	if (!have || !title || !type || !description || !why || !milestone || !length || !resources || !achieve || !obstacles || !help || !difficulty || !knowledge || !email)
+	if (!title || !type || !description || !why || !milestone || !length || !resources || 
+		!achieve || !obstacles || !help || !difficulty || !knowledge || !email || !studentID)
 	{
 		alert("Please fill out all required fields.");
 		event.preventDefault();
 	}
+	else {
+		alert("<p>" + title + "</p>");
+	}
 
-	
 });

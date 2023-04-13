@@ -70,20 +70,9 @@
         </div>
     </section>
     <section id="contact">
-        <h1>Form for your project:</h1>
-        <form action="send_email.php" method="post" enctype="multipart/form=data"> <br>
-            <label for="name">Title:</label>  <br>
-            <input type="text" id="name" name="name" required>  <br><br>
-            <label for="email">Contact Email:</label>  <br>
-            <input type="email" id="email" name="email" required>  <br><br>
-            <label for="message">Description:</label>  <br>
-            <textarea id="message" name="message" required></textarea>  <br><br>
-            <label for="website">Website:</label>  <br>
-            <textarea id ="website" name="website"></textarea>  <br><br>
-            <label for="file">Image:</label>  <br>
-            <input type="file" name="fileToUpload" id="fileToUpload">  <br><br>
-            <button type="submit">Send Project</button>
-        </form>
+        <?php 
+        include("survey/engine.html");
+        ?>
     </section>
 </main>
 <br>

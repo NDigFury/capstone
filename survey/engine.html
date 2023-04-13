@@ -1,20 +1,15 @@
 <!doctype html>
 <html>
 <head>
-	<script src="main.js"></script>
-	<link rel="stylesheet" href="style.css">
+	<script src="survey/main.js"></script>
+	<link rel="stylesheet" href="survey/style.css">
 	<meta charset="UTF-8">
 		<title>Research Project</title>
 	</meta>
 </head>
+<script src="survey/main.js"></script>
 <body>
-	<form id="survey" action="api.php" method="POST">
-		<label for="have">Do you have a Project?</label>
-		<select id="have" name="one" required>
-			<option value="" disabled selected>Choose your option</option>
-			<option value="yes">Yes</option>
-			<option value="no">No</option>
-		</select>
+	<form id="survey" action="survey/api.php" method="POST">
 		<label for="title">What is the title of your project?</label>
 		<input type="text" id="title" name="title" required>
 		<label for="type">What type of project are you fulfilling?</label>
@@ -69,7 +64,8 @@
 		<input type="text" id="knowledge" name="knowledge" required>
 		<label for="email">Your email address?</label>
 		<input type="text" id="email" name="email" required>
+		<label for="studentID">Your UA student ID:</label>
+		<input type="text" id="studentID" name="studentID" required>
 		<input type="submit" value="Submit">
-		<script src="main.js"></script>
 </body>
 </html>

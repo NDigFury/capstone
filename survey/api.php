@@ -1,6 +1,5 @@
 <?php
 
-$have = $_POST['have'];
 $title = $_POST['title'];
 $type = $_POST['type'];
 $description = $_POST['description'];
@@ -14,8 +13,8 @@ $help = $_POST['help'];
 $difficulty = $_POST['difficulty'];
 $knowledge = $_POST['knowledge'];
 $email = $_POST['email'];
+$studentID = $_POST['studentID'];
 
-echo "Do you have a project idea? " . htmlspecialchars($have) . "<br>";
 echo "Title: " . htmlspecialchars($title) . "<br>";
 echo "Type: " . htmlspecialchars($type) . "<br>";
 echo "Description: " . htmlspecialchars($description) . "<br>";
@@ -28,4 +27,5 @@ echo "What obstacles the project will have? " . htmlspecialchars($obstacles) . "
 echo "Multiple people required: " . htmlspecialchars($help) . "<br>";
 echo "Difficulty scale: " . htmlspecialchars($difficulty) . "<br>";
 echo "What kind of knowledge is required? " . htmlspecialchars($knowledge) . "<br>";
+echo "Student ID: " . htmlspecialchars($studentID) . "<br>";
 ?>
