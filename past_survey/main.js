@@ -1,18 +1,16 @@
 document.getElementById("survey").addEventListener("submit", function(event) 
 {
-	const have = document.getElementById("have").value.trim();
+	const names = document.getElementById("names").value.trim();
 	const title = document.getElementById("title").value.trim();
 	const description = document.getElementById("description").value.trim();
 	const length = document.getElementById("length").value.trim();
-	const time = document.getElementById("time").value.trim();
 	const difficulty = document.getElementById("difficulty").value.trim();
-	const entry = document.getElementById("entry").value.trim();
-	const email = document.getElementById("email").value.trim();
+	const studentID = document.getElementById("studentID").value.trim();
+	const check = document.getElementById("check").value.trim();
 
-	if (!have || !title || !description || !length || !time || !difficulty || !entry || !email)
+	if (!names || !title || !description || !length || !difficulty || !studentID || !check)
 	{
 		alert("Please fill out all required fields.");
 		event.preventDefault();
 	}
-	
 });

@@ -1,19 +1,27 @@
 <?php
-
-$have = $_POST['have'];
+$names = $_POST['names'];
 $title = $_POST['title'];
 $description = $_POST['description'];
 $length = $_POST['length'];
-$time = $_POST['time'];
 $difficulty = $_POST['difficulty'];
-$entry = $_POST['entry'];
-$email = $_POST['email'];
+$studentID = $_POST['studentID'];
+$check = $_POST['check'];
 
-echo "Do you have a project idea? " . htmlspecialchars($have) . "<br>";
-echo "Title: " . htmlspecialchars($title) . "<br>";
-echo "Description: " . htmlspecialchars($description) . "<br>";
-echo "How long did it take you to complete your project? " . htmlspecialchars($length) . "<br>";
-echo "Does your project require more development? " . htmlspecialchars($time) . "<br>";
-echo "Difficulty scale: " . htmlspecialchars($difficulty) . "<br>";
-echo "File upload: " . htmlspecialchars($entry) . "<br>";
+$s ="";
+$s .= htmlspecialchars($names) . ",";
+$s .= htmlspecialchars($title) . ",";
+$s .= htmlspecialchars($description) . ",";
+$s .= htmlspecialchars($length) . ",";
+$s .= htmlspecialchars($difficulty) . ",";
+if(strlen(htmlspecialchars($check)) > 0) { // Check is 'on'
+    $s .= htmlspecialchars($studentID) . ",";
+    $s .= htmlspecialchars($check);
+}
+else {
+    $s .= htmlspecialchars($studentID);
+}
+$f = fopen("../survey.csv", "a");
+fwrite($f, "\n".$s);
+fclose($f);
+header( "Location: ../index.php");
 ?>
