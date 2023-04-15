@@ -48,11 +48,7 @@
 <header>
     <nav>
         <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="../index.php">Home</a></li>
-            <li><a href="../past_survey/engine.html">Project Completed Submit</a></li>
-            <li><a href="../survey/engine.html">Survey</a></li>
+            <li><a href="http://srw.rjwebz.com/">Home</a></li>
         </ul>
     </nav>
 </header>
@@ -69,9 +65,11 @@
         <form id="form" action="send_email.php" method="POST">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name..">
+            <br>
             <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="Your email..">
             <label for="message">Message</label>
+            <br>
             <textarea id="message" name="message" placeholder="What would you like to know.." style="height:200px"></textarea>
             <input type="submit" value="Submit">
         </form>
