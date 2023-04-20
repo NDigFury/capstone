@@ -46,7 +46,7 @@
     <th>Description</th>
     <th>Timeframe</th>
     <th>Difficulty(1-5)</th>
-    <th>Student ID</t>
+    <th>Net ID</t>
     </tr>
     </thead>";
     echo "<tbody>\n\n";
