@@ -2,8 +2,8 @@
 $names = $_POST['names'];
 $title = $_POST['title'];
 $description = $_POST['description'];
-$difficulty = $_POST['url'];
-$studentID = $_POST['netID'];
+$url = $_POST['url'];
+$netID = $_POST['netID'];
 $check = $_POST['check'];
 
 $s ="";

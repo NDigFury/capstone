@@ -28,12 +28,12 @@
   </div>
   <div id="Current" class="tabcontent">
     <div class="tableContainer">
-      <?php tableStatus(7); ?>
+      <?php tableStatus(6); ?>
     </div>
   </div>
   <div id="Past" class="tabcontent">
     <div class="tableContainer">
-      <?php tableStatus(6)?>
+      <?php tableStatus(5)?>
     </div>
   </div>
 <?php
@@ -44,20 +44,19 @@
     <th>Student Name(s)</th>
     <th>Project Title</th>
     <th>Description</th>
-    <th>Timeframe</th>
-    <th>Difficulty(1-5)</th>
+    <th>Links</th>
     <th>Net ID</t>
     </tr>
     </thead>";
     echo "<tbody>\n\n";
     $f = fopen("survey.csv", "r");
     while (($line = fgetcsv($f)) !== false){
-      //If the check is on, an eighth element will be present
+      //If the check is on, an 6th element will be present
       if(count($line) == $curCom) {
         echo "<tr>";
         $i = 1;
         foreach ($line as $cell) {
-          if($curCom == 7) { //Removes eighth element
+          if($curCom == 6) { //Removes 6th element
             if($i < $curCom ){
               echo "<td>" . htmlspecialchars($cell) . "</td>";
             }
