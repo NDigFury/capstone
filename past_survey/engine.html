@@ -3,10 +3,22 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
-		<title>Past Project Submission Survey</title>
+		<title>Project Submission Survey</title>
 	</meta>
 </head>
-<body>
+<body> 
+	<div class="redRow"></div>
+	<div class="headerMain">
+	  <img class="logo" src="https://www.arizona.edu/sites/default/files/www_webheader-01.svg">
+	  <ul class="menuItems">
+		<li><a href="https://www.arizona.edu/">Home</a></li>
+		<li><a href="https://www.arizona.edu/about">About</a></li>
+		<li><a href="https://news.arizona.edu/">News</a></li>
+		<li><a href="../index.php">Table</a></li>
+		<li><a href="../survey/engine.html">Survey</a></li>
+		<li><a href="../contact/entry.php">Contact</a></li>
+	  </ul>
+	</div>
 	<form id="survey" action="api.php" method="POST">
 		<label for="names">Write your name(s):</label>
 		<input type="text" id="names" name="names" required>
@@ -16,8 +28,6 @@
 		<textarea id="description" name="description" rows="4" cols="50" required></textarea>
 		<label for="url">Add a link for your project.</label>
 		<textarea id="url" name="url"></textarea>
-		<!-- <label for="entry">Please attach a file to dispaly your project</label>
-		<input type="file" id="entry" name="entry" required> -->
 		<label for="nettID">Your Net ID:</label>
 		<input type="text" id="netID" name="netID" required>
 		<label for="check">Is this project in development?</label>
