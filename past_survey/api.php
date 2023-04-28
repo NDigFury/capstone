@@ -18,7 +18,7 @@ if(strlen(htmlspecialchars($check)) > 0) { // Check is 'on'
 else {
     $s .= htmlspecialchars($netID);
 }
-$f = fopen("../survey.csv", "a");
+$f = fopen("../past_survey.csv", "a");
 fwrite($f, "\n".$s);
 fclose($f);
 header( "Location: ../index.php");

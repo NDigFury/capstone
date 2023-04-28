@@ -12,9 +12,9 @@
     <img class="logo" src="https://www.arizona.edu/sites/default/files/www_webheader-01.svg">
     <ul class="menuItems">
       <li><a href="https://www.arizona.edu/">Home</a></li>
-      <li><a href="https://www.arizona.edu/about">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="https://news.arizona.edu/">News</a></li>
-      <li><a href="survey/engine.html">Survey</a></li>
+      <li><a href="survey/engine.html">Project Survey</a></li>
       <li><a href="past_survey/engine.html">Create Submission</a></li>
       <li><a href="contact/entry.php">Contact</a></li>
     </ul>
@@ -38,7 +38,24 @@
   </div>
 <?php
   function tableStatus($curCom) {
-    echo "<table style=\"border-collapse: collapse;\">
+    echo "<tbody>\n\n";
+    if($curCom == 6) { //If the check is on, an 6th element will be present
+      echo "<table style=\"border-collapse: collapse;\">
+    <thead>
+    <tr>
+    <th>Project Title</th>
+    <th>Project Type</th>
+    <th>Description</th>
+    <th>Milesotnes</th>
+    <th>Time Length</th>
+    <th>Achievements</th>
+    </tr>
+    </thead>";
+    echo "<tbody>\n\n";
+      $f = fopen("survey.csv", "r");
+    }
+    else {
+      echo "<table style=\"border-collapse: collapse;\">
     <thead>
     <tr>
     <th>Student Name(s)</th>
@@ -49,7 +66,9 @@
     </tr>
     </thead>";
     echo "<tbody>\n\n";
-    $f = fopen("survey.csv", "r");
+      $f = fopen("past_survey.csv", "r");
+    }
+    echo "<tbody>\n\n";
     while (($line = fgetcsv($f)) !== false){
       //If the check is on, an 6th element will be present
       if(count($line) == $curCom) {

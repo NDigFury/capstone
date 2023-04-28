@@ -13,7 +13,7 @@
     <img class="logo" src="https://www.arizona.edu/sites/default/files/www_webheader-01.svg">
     <ul class="menuItems">
       <li><a href="https://www.arizona.edu/">Home</a></li>
-      <li><a href="https://www.arizona.edu/about">About</a></li>
+      <li><a href="../about.html">About</a></li>
       <li><a href="https://news.arizona.edu/">News</a></li>
       <li><a href="../index.php">Table</a></li>
       <li><a href="../survey/engine.html">Survey</a></li>

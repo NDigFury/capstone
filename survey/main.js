@@ -12,11 +12,10 @@ document.getElementById("survey").addEventListener("submit", function(event)
 	const help = document.getElementById("help").value.trim();
 	const difficulty = document.getElementById("difficulty").value.trim();
 	const knowledge = document.getElementById("knowledge").value.trim();
-	const email = document.getElementById("email").value.trim();
-	const studentID = document.getElementById("studentID").value.trim();
+	const netID = document.getElementById("netID").value.trim();
 
 	if (!title || !type || !description || !why || !milestone || !length || !resources || 
-		!achieve || !obstacles || !help || !difficulty || !knowledge || !email || !studentID)
+		!achieve || !obstacles || !help || !difficulty || !knowledge || !netID)
 	{
 		alert("Please fill out all required fields.");
 		event.preventDefault();
