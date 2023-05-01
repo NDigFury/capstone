@@ -1,3 +1,4 @@
+<!-- "Create Submission" -->
 <!doctype html>
 <html>
 <head>
@@ -7,9 +8,11 @@
 	</meta>
 </head>
 <body> 
+	<!-- Header styling -->
 	<div class="redRow"></div>
 	<div class="headerMain">
 	  <img class="logo" src="https://www.arizona.edu/sites/default/files/www_webheader-01.svg">
+	  <!-- Webpage buttons -->
 	  <ul class="menuItems">
 		<li><a href="https://www.arizona.edu/">Home</a></li>
 		<li><a href="https://www.arizona.edu/about">About</a></li>
@@ -19,6 +22,7 @@
 		<li><a href="../contact/entry.php">Contact</a></li>
 	  </ul>
 	</div>
+	<!-- Each question corresponds to one column in the table. -->
 	<form id="survey" action="api.php" method="POST">
 		<label for="names">Write your name(s):</label>
 		<input type="text" id="names" name="names" required>

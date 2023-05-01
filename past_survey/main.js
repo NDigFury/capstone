@@ -1,3 +1,4 @@
+// Measures put in place for proper submission from the user in 'create submission'
 document.getElementById("survey").addEventListener("submit", function(event) 
 {
 	const names = document.getElementById("names").value.trim();

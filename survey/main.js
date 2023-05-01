@@ -1,3 +1,4 @@
+// Just like the script for 'create submission' (past_survey), it ensures a proper submission is made.
 document.getElementById("survey").addEventListener("submit", function(event) 
 {
 	const title = document.getElementById("title").value.trim();

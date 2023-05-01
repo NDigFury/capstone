@@ -1,5 +1,6 @@
 <?php
-
+// This script was used in development in case we wanted to display the user's results after a submission was created.
+// Other possible uses for this include writing a 'receipt' though email since the netID is taken from the user.
 $title = $_POST['title'];
 $type = $_POST['type'];
 $description = $_POST['description'];
@@ -13,7 +14,7 @@ $help = $_POST['help'];
 $difficulty = $_POST['difficulty'];
 $knowledge = $_POST['knowledge'];
 $email = $_POST['email'];
-$studentID = $_POST['studentID'];
+$studentID = $_POST['studentID']; //netID
 
 echo "Title: " . htmlspecialchars($title) . "<br>";
 echo "Type: " . htmlspecialchars($type) . "<br>";

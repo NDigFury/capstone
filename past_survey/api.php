@@ -1,4 +1,5 @@
 <?php
+// This script is for parsing the data from the 'create submission' survey form and writing it into our 'database' (survey.csv)
 $names = $_POST['names'];
 $title = $_POST['title'];
 $description = $_POST['description'];

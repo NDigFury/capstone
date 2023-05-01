@@ -1,4 +1,5 @@
 <?php
+// This script sends the email once the contact form has been validated after submission.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
@@ -10,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $recipient = "ntfury@arizona.edu";
+    $recipient = "ntfury@arizona.edu"; // Change to manager of our system
     $subject = "Submmitted $name to Website";
     $email_content = "Would like to know:\n$message\n";
     $email_content .= "Thank you: $name\n";

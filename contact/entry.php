@@ -1,3 +1,4 @@
+<!-- "Contact" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header styline -->
 <div class="redRow"></div>
   <div class="headerMain">
     <img class="logo" src="https://www.arizona.edu/sites/default/files/www_webheader-01.svg">
+    <!-- Webpage buttons -->
     <ul class="menuItems">
       <li><a href="https://www.arizona.edu/">Home</a></li>
       <li><a href="https://www.arizona.edu/about">About</a></li>
@@ -21,6 +24,7 @@
     </ul>
   </div>
   <br>
+  <!-- Email form -->
 <main>
     <section id="contact">
         <form id="form" action="send_email.php" method="POST">

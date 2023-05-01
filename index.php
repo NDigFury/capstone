@@ -1,3 +1,4 @@
+<!-- "Table" -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +8,11 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <!-- Header styling -->
   <div class="redRow"></div>
   <div class="headerMain">
     <img class="logo" src="https://www.arizona.edu/sites/default/files/www_webheader-01.svg">
+    <!-- Main webpage buttons -->
     <ul class="menuItems">
       <li><a href="https://www.arizona.edu/">Home</a></li>
       <li><a href="https://www.arizona.edu/about">About</a></li>
@@ -22,6 +25,7 @@
   <div class="titleContainer">
     <h1 class="entryTitle">OPPORTUNITY MANAGEMENT SYSTEM</h1>
   </div>
+  <!-- Table -->
   <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Current')" id="defaultOpen">Current</button>
     <button class="tablinks" onclick="openTab(event, 'Past')">Past</button>
@@ -37,6 +41,7 @@
     </div>
   </div>
 <?php
+// This function writes all the table column and entries
   function tableStatus($curCom) {
     echo "<table style=\"border-collapse: collapse;\">
     <thead>
@@ -74,7 +79,8 @@
   }
 ?>
 <script>
-  document.getElementById("defaultOpen").click(); //Open current when page loads.
+  document.getElementById("defaultOpen").click(); //'current' tab on table is open when the page loads.
+  // This allows for the 'current' and 'past' tabs to change the table
   function openTab(event, status) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
