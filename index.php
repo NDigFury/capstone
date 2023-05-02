@@ -41,31 +41,31 @@
     echo "<tbody>\n\n";
     if($curCom == 6) { //If the check is on, an 6th element will be present
       echo "<table style=\"border-collapse: collapse;\">
-    <thead>
-    <tr>
-    <th>Project Title</th>
-    <th>Project Type</th>
-    <th>Description</th>
-    <th>Milesotnes</th>
-    <th>Time Length</th>
-    <th>Achievements</th>
-    </tr>
-    </thead>";
-    echo "<tbody>\n\n";
+      <thead>
+      <tr>
+      <th>Project Title</th>
+      <th>Project Type</th>
+      <th>Description</th>
+      <th>Milesotnes</th>
+      <th>Time Length</th>
+      <th>Achievements</th>
+      </tr>
+      </thead>";
+      echo "<tbody>\n\n";
       $f = fopen("survey.csv", "r");
     }
     else {
       echo "<table style=\"border-collapse: collapse;\">
-    <thead>
-    <tr>
-    <th>Student Name(s)</th>
-    <th>Project Title</th>
-    <th>Description</th>
-    <th>Links</th>
-    <th>Net ID</t>
-    </tr>
-    </thead>";
-    echo "<tbody>\n\n";
+      <thead>
+      <tr>
+      <th>Student Name(s)</th>
+      <th>Project Title</th>
+      <th>Description</th>
+      <th>Links</th>
+      <th>Net ID</t>
+      </tr>
+      </thead>";
+      echo "<tbody>\n\n";
       $f = fopen("past_survey.csv", "r");
     }
     echo "<tbody>\n\n";
